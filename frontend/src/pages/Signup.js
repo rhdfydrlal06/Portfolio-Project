@@ -22,7 +22,7 @@ const Signup = () => {
             );
             alert(res.data.message);
             if (res.data.result==="success") {
-                history.push("/");  
+                window.location.href= "/";
             }
             history.push("/signup");   
         } catch (e) {
